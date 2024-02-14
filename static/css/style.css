@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+.app-background {
+    background-color: #f7a583;
+}
+
+.header-background {
+    background-color: #f7a583;
+}
+
+.b-example-divider {
+    width: 100%;
+    height: 3rem;
+    background-color: rgba(0, 0, 0, .1);
+    border: solid rgba(0, 0, 0, .15);
+    border-width: 1px 0;
+    box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, .1), inset 0 0.125em 0.5em rgba(0, 0, 0, .15);
+}
+
+.nav-link.active {
+    background-color: #a583f7 !important;
+    color: white !important;/* Set your desired background color */ /* Set your desired text color */
+    /* Add any additional styles as needed */
+}
+
+.nav-link {
+    color: #a583f7 !important;
+}
+
+.btn-primary {
+    --bs-btn-color: white;
+    --bs-btn-bg: #a583f7;
+    --bs-btn-border-color: #a583f7;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #83f7a5;
+    --bs-btn-hover-border-color: #a583f7;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #a583f7;
+    --bs-btn-active-border-color: #a583f7;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #a583f7;
+    --bs-btn-disabled-border-color: #a583f7;
+}
