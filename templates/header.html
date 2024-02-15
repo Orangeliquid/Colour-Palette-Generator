@@ -1,11 +1,22 @@
 <div class="container header-background">
     <header class="d-flex justify-content-center py-3">
+        <!-- Use a custom icon -->
+        <img src="static/icons/orange_alien.ico" alt="Bootstrap" width="42" height="42"
+             class="rounded-circle border border-white me-3">
+
         <ul class="nav nav-pills">
-            <li class="nav-item"><a href="{{ url_for('home') }}" class="nav-link active" aria-current="page">Home</a>
+            <li class="nav-item">
+                <a href="{{ url_for('home') }}" class="nav-link active" aria-current="page">Home</a>
             </li>
-            <li class="nav-item"><a href="#" class="nav-link">Colour Palette Generation</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
-            <li class="nav-item"><a href="{{ url_for('about') }}" class="nav-link">About</a></li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Colour Palette Generation</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">FAQs</a>
+            </li>
+            <li class="nav-item">
+                <a href="{{ url_for('about') }}" class="nav-link">About</a>
+            </li>
         </ul>
     </header>
 </div>

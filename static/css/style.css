@@ -27,6 +27,10 @@
     color: #a583f7 !important;
 }
 
+.copyright {
+    color: #a583f7 !important;
+}
+
 .btn-primary {
     --bs-btn-color: white;
     --bs-btn-bg: #a583f7;
@@ -42,4 +46,28 @@
     --bs-btn-disabled-color: #fff;
     --bs-btn-disabled-bg: #a583f7;
     --bs-btn-disabled-border-color: #a583f7;
+}
+
+.card1 {
+    background-color: #080703 !important;
+}
+
+.card2 {
+    background-color: #00405c !important;
+}
+
+.card3 {
+    background-color: #f9cf00 !important;
+}
+
+.card4 {
+    background-color: #b50000 !important;
+}
+
+.card5 {
+    background-color: #a40000 !important;
+}
+
+.card6 {
+    background-color: #090804 !important;
 }

@@ -4,8 +4,9 @@
 <div class="container col-xxl-8 px-4 py-5">
     <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
         <div class="col-10 col-sm-8 col-lg-6">
-            <img src="bootstrap-themes.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700"
-                 height="500" loading="lazy">
+            <img src="static/images/index_image.jpg" class="d-block mx-lg-auto img-fluid rounded-circle"
+                 alt="abstract painting with many colours" width="500"
+                 height="700" loading="lazy">
         </div>
         <div class="col-lg-6">
             <h1 class="display-4 fw-bold text-body-emphasis lh-1 mb-3">Welcome to OCPG</h1>
@@ -32,73 +33,175 @@
 <div class="b-example-divider"></div>
 
 <div class="container px-4 py-5" id="custom-cards">
-    <h2 class="pb-2 border-bottom">Vibrant Colour Palettes</h2>
+    <h2 class="pb-2 border-bottom">A Few Colors from Image Above</h2>
 
     <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-      <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('{{ url_for('static', filename='images/insta_cp.png') }}');">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h3>
-            <ul class="d-flex list-unstyled mt-auto">
-              <li class="me-auto">
-                <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-              </li>
-              <li class="d-flex align-items-center me-3">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                <small>Earth</small>
-              </li>
-              <li class="d-flex align-items-center">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                <small>3d</small>
-              </li>
-            </ul>
-          </div>
+        <!-- First card -->
+        <div class="col">
+            <div class="card1 card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">#080703</h3>
+                    <ul class="d-flex list-unstyled mt-auto">
+                        <li class="me-auto">
+                            <img src="static/icons/orange_alien.ico" alt="Bootstrap" width="32" height="32"
+                                class="rounded-circle border border-white">
+                        </li>
+                        <li class="d-flex align-items-center me-3">
+                            <svg class="bi me-2" width="1em" height="1em">
+                                <use xlink:href="#geo-fill"></use>
+                            </svg>
+                            <small>Px Count:</small>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <svg class="bi me-2" width="1em" height="1em">
+                                <use xlink:href="#calendar3"></use>
+                            </svg>
+                            <small>3941</small>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
 
-      <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('{{ url_for('static', filename='images/lost_in_space.png') }}');">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to multiple lines</h3>
-            <ul class="d-flex list-unstyled mt-auto">
-              <li class="me-auto">
-                <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-              </li>
-              <li class="d-flex align-items-center me-3">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                <small>Pakistan</small>
-              </li>
-              <li class="d-flex align-items-center">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                <small>4d</small>
-              </li>
-            </ul>
-          </div>
+        <!-- Second card -->
+        <div class="col">
+            <div class="card2 card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">#00405c</h3>
+                    <ul class="d-flex list-unstyled mt-auto">
+                        <li class="me-auto">
+                            <img src="static/icons/orange_alien.ico" alt="Bootstrap" width="32" height="32"
+                                class="rounded-circle border border-white">
+                        </li>
+                        <li class="d-flex align-items-center me-3">
+                            <svg class="bi me-2" width="1em" height="1em">
+                                <use xlink:href="#geo-fill"></use>
+                            </svg>
+                            <small>Px Count:</small>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <svg class="bi me-2" width="1em" height="1em">
+                                <use xlink:href="#calendar3"></use>
+                            </svg>
+                            <small>759</small>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
 
-      <div class="col">
-        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('{{ url_for('static', filename='images/kartik_research.png') }}');">
-          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h3>
-            <ul class="d-flex list-unstyled mt-auto">
-              <li class="me-auto">
-                <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32" class="rounded-circle border border-white">
-              </li>
-              <li class="d-flex align-items-center me-3">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"></use></svg>
-                <small>California</small>
-              </li>
-              <li class="d-flex align-items-center">
-                <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"></use></svg>
-                <small>5d</small>
-              </li>
-            </ul>
-          </div>
+        <!-- Third card -->
+        <div class="col">
+            <div class="card3 card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">#f9cf00</h3>
+                    <ul class="d-flex list-unstyled mt-auto">
+                        <li class="me-auto">
+                            <img src="static/icons/orange_alien.ico" alt="Bootstrap" width="32" height="32"
+                                class="rounded-circle border border-white">
+                        </li>
+                        <li class="d-flex align-items-center me-3">
+                            <svg class="bi me-2" width="1em" height="1em">
+                                <use xlink:href="#geo-fill"></use>
+                            </svg>
+                            <small>Px Count:</small>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <svg class="bi me-2" width="1em" height="1em">
+                                <use xlink:href="#calendar3"></use>
+                            </svg>
+                            <small>222</small>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 
+    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        <!-- Fourth card -->
+        <div class="col">
+            <div class="card4 card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">#b50000</h3>
+                    <ul class="d-flex list-unstyled mt-auto">
+                        <li class="me-auto">
+                            <img src="static/icons/orange_alien.ico" alt="Bootstrap" width="32" height="32"
+                                class="rounded-circle border border-white">
+                        </li>
+                        <li class="d-flex align-items-center me-3">
+                            <svg class="bi me-2" width="1em" height="1em">
+                                <use xlink:href="#geo-fill"></use>
+                            </svg>
+                            <small>Px Count:</small>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <svg class="bi me-2" width="1em" height="1em">
+                                <use xlink:href="#calendar3"></use>
+                            </svg>
+                            <small>122</small>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Fifth card -->
+        <div class="col">
+            <div class="card5 card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">#a40000</h3>
+                    <ul class="d-flex list-unstyled mt-auto">
+                        <li class="me-auto">
+                            <img src="static/icons/orange_alien.ico" alt="Bootstrap" width="32" height="32"
+                                class="rounded-circle border border-white">
+                        </li>
+                        <li class="d-flex align-items-center me-3">
+                            <svg class="bi me-2" width="1em" height="1em">
+                                <use xlink:href="#geo-fill"></use>
+                            </svg>
+                            <small>Px Count:</small>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <svg class="bi me-2" width="1em" height="1em">
+                                <use xlink:href="#calendar3"></use>
+                            </svg>
+                            <small>84</small>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sixth card -->
+        <div class="col">
+            <div class="card6 card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">#090804</h3>
+                    <ul class="d-flex list-unstyled mt-auto">
+                        <li class="me-auto">
+                            <img src="static/icons/orange_alien.ico" alt="Bootstrap" width="32" height="32"
+                                class="rounded-circle border border-white">
+                        </li>
+                        <li class="d-flex align-items-center me-3">
+                            <svg class="bi me-2" width="1em" height="1em">
+                                <use xlink:href="#geo-fill"></use>
+                            </svg>
+                            <small>Px Count:</small>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <svg class="bi me-2" width="1em" height="1em">
+                                <use xlink:href="#calendar3"></use>
+                            </svg>
+                            <small>10</small>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <div class="b-example-divider"></div>
+
+
 {% endblock %}
