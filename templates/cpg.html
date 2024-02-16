@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% block title %}Colour Palette Generation{% endblock %}
+{% block content %}
+<div class="p-5 mb-4 bg-body-cpg rounded-3">
+    <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">Upload Your Image</h1>
+        <p class="col-md-8 fs-6">Please select 'Choose File' and choose the image you would like to be analyzed</p>
+
+        <!-- File input element -->
+        <form method="post" enctype="multipart/form-data" action="{{ url_for('cpg') }}">
+            <div class="mb-3">
+                <input type="file" class="form-control" id="imageUpload" name="imageUpload" accept=".png, .jpg, .jpeg">
+                <small class="form-text text-muted">Please use PNG, JPEG, or JPG files.</small>
+            </div>
+            <div class="mb-3">
+                <label for="numColors" class="form-label">Number of Colors:</label>
+                <input type="number" class="form-control" id="numColors" name="numColors" value="5" min="1" max="100">
+            </div>
+            <button type="submit" class="btn btn-primary">Generate Color Palette</button>
+        </form>
+    </div>
+</div>
+
+<div class="b-example-divider"></div>
+
+<div class="container px-4 py-5" id="custom-cards">
+    <h2 class="pb-2 border-bottom">Most Common Colors</h2>
+
+    {% if most_common_colors %}
+    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        {% for rgb, color_hex, count in most_common_colors %}
+        <div class="col">
+            <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                 style="background-color: {{ color_hex }} !important;">
+                <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">{{ color_hex }}</h3>
+                    <ul class="d-flex list-unstyled mt-auto">
+                        <li class="me-auto">
+                            <img src="static/icons/orange_alien.ico" alt="Color" width="32" height="32"
+                                 class="rounded-circle border border-theme">
+                        </li>
+                        <li class="d-flex align-items-center me-3">
+                            <small>Count: {{ count }}</small>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    {% else %}
+    <p>No color palette generated yet.</p>
+    {% endif %}
+</div>
+<div class="b-example-divider"></div>
+{% endblock %}
