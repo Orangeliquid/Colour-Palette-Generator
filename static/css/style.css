@@ -19,8 +19,7 @@
 
 .nav-link.active {
     background-color: #a583f7 !important;
-    color: white !important;/* Set your desired background color */ /* Set your desired text color */
-    /* Add any additional styles as needed */
+    color: white !important;
 }
 
 .nav-link {
@@ -70,4 +69,12 @@
 
 .card6 {
     background-color: #090804 !important;
+}
+
+.rounded-circle {
+    border-radius: 35%!important;
+}
+
+.border-theme {
+    border-color: #a583f7 !important;
 }
