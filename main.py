@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for
+from flask import Flask, render_template, request
 from flask_bootstrap import Bootstrap
 from color_palette_generator import get_most_common_colors
 import os
