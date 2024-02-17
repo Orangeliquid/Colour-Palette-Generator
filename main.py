@@ -3,7 +3,6 @@ from flask_bootstrap import Bootstrap
 from color_palette_generator import get_most_common_colors
 import os
 import shutil
-import atexit
 
 app = Flask(__name__)
 bootstrap = Bootstrap(app)
