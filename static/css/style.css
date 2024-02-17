@@ -82,3 +82,14 @@
 .bg-body-cpg {
     background-color: #83f7a5 !important;
 }
+
+.a-tag {
+    color: #a583f7; /* Using rgba to set both color and opacity */
+    text-decoration-color: #a583f7;
+    font-weight: bold;
+}
+
+.a-tag:hover {
+    color: #83f7a5; /* New color when hovered */
+    text-decoration-color: #83f7a5;
+}
