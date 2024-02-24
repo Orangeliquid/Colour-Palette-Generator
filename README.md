@@ -19,7 +19,7 @@ To run the Online Color Palette Generator locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/ocpg.git
+   git clone https://github.com/Orangeliquid/ocpg.git
    cd ocpg
    ```
 
